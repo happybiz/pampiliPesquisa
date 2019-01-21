@@ -1,0 +1,33 @@
+#modal(class="modal fade", role="dialog")
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button(class="close" data-dismiss="modal") &times;
+                h3.text-center.modal-title Editar
+            .modal-body.clearfix
+                .env-content-infos
+                    .form-group.form-group-pampili.clearfix
+                        .col-sm-12
+                            label Nome
+                            input(id="txtEmail", type="text", class="form-control input-lg", data-required="1", data-mask="text", maxlength="100")
+                            error-message.text-danger.hide
+                    .form-group-pampili.clearfix
+                        .col-sm-12
+                            .form-group
+                                label Projeto
+                                select(class="form-control input-lg")
+                                    option(value="01") Coleção Verão 2017
+                                    option(value="01") Coleção Inverno 2016
+                    .form-group-pampili.clearfix
+                        .col-sm-12
+                            .form-group
+                                label Linha
+                                select(class="form-control input-lg")
+                                    option(value="01") Linha Pampilo
+                                    option(value="01") Linha Super Rosa
+
+
+
+
+            .modal-footer
+                button.btn.btn-pampili.btn-lg( data-dismiss="modal") SALVAR

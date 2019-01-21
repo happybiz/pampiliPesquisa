@@ -1,0 +1,323 @@
+.indicadores
+    &.wrraper
+        padding-top: 5px;
+
+.indicadores-row
+    padding-left 120px
+    padding-right 120px
+    &:not(:first-child)
+        margin-top: 80px
+
+.bg-rua
+    background: white;
+    position:relative;
+    box-shadow: 1px 1px 2px #d6d5d5
+    border-radius 20px
+    padding-top 20px
+    padding-bottom 10px
+    .title
+        padding-left 15px
+        padding-right 15px
+        h6
+            font-weight:bolder
+            font-size: 20px
+            height 40px
+            font-family 'Roboto', sans-serif
+    margin-bottom 20px
+
+        
+.indicadores-pampili
+    & > *
+        width: 15.9%
+
+.dias-w
+    text-align: center
+    display: flex;
+    justify-content: center;
+    min-height: 150px
+    .dias 
+        font-size: 120px
+        line-height: 1
+        margin-bottom: 0
+        height 150px
+        letter-spacing 5px
+        color #8e8e8e
+
+.ranking
+    background-color: $colors['main']
+    width: 140px
+    height 140px
+    background-image: url(../img/loros.png)
+    background-position: center 80%
+    background-repeat: no-repeat
+    margin auto
+    padding: 10px
+    border-radius: 50%
+    color white
+    text-align: center
+    p
+        font-size: 60px
+        letter-spacing: -4px
+        padding-top: 10px
+.valor
+    margin-top: 10px
+
+.carinha
+    text-align: center
+    img
+        max-height:  150px
+        margin: auto
+
+.tamanho-fonte
+    font-size: 40px;
+    align-self: center;
+    line-height: 1.2
+    
+
+.estrela
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding: 0 10px;
+    margin: auto;
+    max-width: 240px;
+    img
+        width: 20%
+        margin: auto
+
+
+.tamanho
+    height: 150px
+
+
+@media screen and (max-width:1555px)
+    .indicadores-pampili
+        justify-content: center
+        padding: 0 50px
+        margin: auto
+        & > *
+            width: 20%
+
+@media screen and (max-width:1400px)
+    .indicadores-pampili
+        padding: 0 20px
+        & > *
+            width: 20%
+
+@media screen and (max-width:1315px)
+    .tamanho
+        height: 120px
+    .dias-w
+        min-height: 100px;
+        .dias
+            letter-spacing: -5px
+            font-size: 120px
+            height 100px
+    .carinha
+        img
+            max-height:  130px
+    .ranking
+        background-color: $colors['main']
+        width: 120px
+        height 120px
+        p
+            font-size 40px
+    .tamanho-fonte
+        font-size: 30px
+        align-self: center
+
+
+@media screen and (max-width:1270px)
+    .indicadores-pampili
+        padding: 0 0
+        & > *
+            width: 24%
+    .indicadores-row
+        padding-left 10px
+        padding-right 10px
+@media screen and (max-width:1100px)
+    .tamanho-fonte
+        font-size: 25px
+        letter-spacing: -2px
+    .indicadores-pampili
+        padding: 0 0
+        & > *
+            width: 49.5%
+@media screen and (max-width:802px)
+    .tamanho-fonte
+        font-size: 28px
+    .indicadores-row
+        padding-left 10px
+        padding-right 10px
+
+@media screen and (max-width:524px)
+    .indicadores-pampili
+        & > *
+            width: 50%
+    .tamanho-fonte
+        font-size: 25px
+    .ranking
+        width: 100px
+        height 100px
+        p
+            font-size: 30px
+    .dias-w
+        .dias 
+            font-size: 120px
+
+
+@media screen and (max-width:420px)
+    .indicadores-pampili
+        & > *
+            width: 100%
+    .indicadores-row
+        padding-left 10px
+        padding-right 10px
+
+@media screen and (max-width:320px)
+    .indicadores-pampili
+        & > *
+            width: 100%
+
+// sun
+#position{
+	position:fixed;
+	bottom:180px;
+	left:25px;
+}
+.sunflower{
+  position:relative;
+  height:30px;
+  width:30px;
+}
+.head {
+  animation: hmove 2s infinite linear;
+  height: 50px;
+  width: 62px;
+  position: relative;
+  left:8px;
+  top:39px;
+  transform-origin: 50% -7px;
+  user-select: none;
+}
+.head .eye {
+  background: #43699a;
+  border-radius: 10px;
+  height: 5px;
+  position: absolute;
+  top: 30px;
+  width: 5px;
+}
+.head .eye#eye-1 {
+  left: 17px;
+   animation: eye 4s linear infinite normal 0.5s;
+}
+.head .eye#eye-2 {
+  right: 17px;
+  animation: eye 4s linear infinite normal 0.5s;
+}
+.head .mouth {
+  background: #ecf0f1;
+  border-radius: 30px;
+  bottom: 2px;
+  clip: rect(8px, 15px, 16px, 0);
+  height: 16px;
+  margin-left: -7.5px;
+  position: absolute;
+  left: 50%;
+  width: 15px;
+}
+
+//Para a flor ficar brava, acicione a classe abaixo
+.resultado-ruim
+    background: #ecf0f1;
+    border-radius: 30px;
+    bottom: 2px;
+    height: 16px;
+    margin-left: -7.5px;
+    position: absolute;
+    left: 50%;
+    width: 15px;
+
+.petals {
+  z-index:-1;
+  border-radius:100%;
+  display:inline-block;
+  background-color:#faaa18;
+  height:50px;
+  width:50px;
+  position:absolute;
+  animation:petals 2s infinite linear;
+  box-shadow:15px 17px #ffe000,
+    -15px 17px #ffe000,
+    -22px -7px #ffe000,
+    0px -22px #ffe000,
+    22px -7px #ffe000;
+}
+.trunk{
+	height: 65px; width: 5px;
+	background:#77b039;
+	left: 37px;top:100px;
+	position:absolute;
+	z-index:-2;
+	animation:trunk 2s infinite linear;
+}
+
+.left-branch{
+	background: #52841c;
+	height: 35px; width: 9px;
+	position: absolute; left: -12px; top: 24px;
+	border-radius:100% 0% 0% 0%;
+	-webkit-border-radius:100% 0% 0% 0%;
+	-moz-border-radius:100% 0% 0% 0%;
+	-ms-border-radius:100% 0% 0% 0%;
+	-o-border-radius:100% 0% 0% 0%;
+	
+	transform: rotate(-50deg);
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
+}
+
+.right-branch{
+	background: #52841c;
+	height: 35px; width: 9px;
+	position: absolute; top: 24px; left: 10px;
+	border-radius:0% 100% 0% 0%;
+	-webkit-border-radius:0% 100% 0% 0%;
+	-moz-border-radius:0% 100% 0% 0%;
+	-ms-border-radius:0% 100% 0% 0%;
+	-o-border-radius:0% 100% 0% 0%;
+	
+	transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+}
+.vase{
+position:absolute;
+   top:165px;
+   left:13px;
+   height: 0; 
+   width: 51px;
+   border-top: 45px solid #faaa18;
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+}
+.vase:before,.vase:after {
+	content: '';
+	position: absolute;
+	background: #faa118;
+}
+.vase:before{
+	background: #f9a018;
+	width: 58px; height: 20px;
+	top: -50px; left: -10px;
+	position:absolute;
+	box-shadow: 0 5px 10px -9px black;
+	-moz-transform: 0 5px 10px -9px black;
+	-ms-transform: 0 5px 10px -9px black;
+	-o-transform: 0 5px 10px -9px black;
+}

@@ -1,0 +1,109 @@
+$thumbcolor = #e257a7
+$thumbBorder = 35px
+
+$trackcolor = #d1d1d1
+// Codigo referente ao Thunb
+input[type=range]
+	-webkit-appearance: none
+	width: 100%
+	margin: 30px 0
+	box-shadow 1px 1px 1px #7d7a7a
+
+@supports (-ms-accelerator:true){
+	input[type=range]{
+		-webkit-appearance: none
+		width: 100%
+		margin: 30px 0
+		height:40px
+	}
+}
+
+input[type=range]:focus
+	outline: none;
+
+// abaixo todos classes referentes ao Slider Button
+/* WebKit */
+input[type=range]::-webkit-slider-runnable-track
+	width: 100%
+	height: 10px
+	cursor: pointer
+	box-shadow: 0
+	background: $trackcolor
+	border-radius: 25px
+	border: 1px solid darkgray
+	z-index: 2
+
+/* webkit */
+// slider peca de fundo ----0------
+input[type=range]::-webkit-slider-thumb
+	box-shadow: 1px 1px 1px #000000
+	border: 0 solid #8dffff
+	height: 46px
+	width: 46px
+	border-radius: $thumbBorder
+	background: $thumbcolor
+	cursor: pointer
+	-webkit-appearance: none
+	margin-top: -18px
+
+/* IE */
+input[type=range]::-ms-thumb
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	border: 0 solid #040000;
+	margin-top: -0px;
+	height: 25px;
+	width: 25px;
+	border-radius: $thumbBorder;
+	background: $thumbcolor
+	cursor: pointer;
+	z-index: 2
+
+input[type=range]:focus::-webkit-slider-runnable-track
+	background: $trackcolor
+
+// slider peca de fundo ----0------
+input[type=range]::-moz-range-track
+	width: 100%
+	height: 10px;
+	cursor: pointer
+	box-shadow: none
+	background: $trackcolor
+	border-radius: 30px
+	border: 0 solid #8dffff
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+
+input[type=range]::-moz-range-thumb
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	border: 0
+	height: 36px
+	width: 36px
+	border-radius: $thumbBorder
+	background: $thumbcolor
+	cursor: pointer
+
+input[type=range]::-ms-track
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: $trackcolor;
+	border-color: transparent;
+	color: transparent;
+
+input[type=range]::-ms-fill-lower
+	background: transparent
+	border: 0 solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 0 #000000, 0px 0px 0 #0d0d0d;
+
+input[type=range]::-ms-fill-upper
+	background: $trackcolor;
+	border: 0 solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 0 #000000, 0px 0px 0 #0d0d0d;
+input[type=range]:focus::-ms-fill-lower
+	background: trackcolor;
+
+input[type=range]:focus::-ms-fill-upper
+	background: trackcolor;
+
+// fim Codigo referente ao Thunb

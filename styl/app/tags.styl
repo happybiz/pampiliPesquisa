@@ -1,0 +1,32 @@
+body
+	font 100%
+	font-family $fonts-family
+	color: 		$font-color-default
+	@extends .bg-light
+	
+p
+	font-size: $font-size['medium']
+	
+h1
+h2
+h3
+h4
+h5
+h6
+	font-family $fonts-family
+	font-family $fonts-family-hs
+	color $colors['main']
+
+a
+	color: $colors['main']
+	font-weight bold
+	&:hover
+		color: $colors['second']
+		text-decoration none
+
+blockquote
+	border-left: 5px solid $colors['main']
+
+.flex
+	flexBox()
+	

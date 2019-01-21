@@ -1,0 +1,16 @@
+.dadosEnvelope
+    img#info.pulsar.img-responsive(src="img/info.svg", alt="Informações Envelope")
+    .dados
+        p.env-name.pd-20-top
+            span.text-second Envelope: 
+            | Princesa
+        p.env-name 
+            span.text-second Projeto: 
+            | Verão 2016
+        p.env-name 
+            span.text-second Data Inicial: 
+            | 20/12/02
+        // classes possiveis são: ok e estourou
+        p.pd-20-top.valores.ok R$23,99 de R$60,99
+        .btn-editar.pd-20-top
+            button(id="txtEmail", type="submit", class=" btn btn-pampili", data-toggle="modal", data-target="#editarModal") Editar

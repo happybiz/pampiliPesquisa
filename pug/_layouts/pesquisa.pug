@@ -1,0 +1,43 @@
+block settings
+    - var title = 'Pesquisa Pampili'
+    - var faceTitle = "Pesquisa Pampili"
+    - var faceDesc= "Pesquisa Pampili"
+    - var faceImage = "http://euro-travel-example.com/thumbnail.jpg"
+    - var faceUrl = "http://euro-travel-example.com/index.htm"
+    - var _DEV = true
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        title #{title}
+        if _DEV
+            // build:css css/all.biz.min.css
+            link(rel="stylesheet", href="css/plugins.css")
+            link(rel="stylesheet", href="css/style.css")
+            // endbuild
+        else
+            link(rel="preload", href="css/all.biz.min.css", as="style")            
+        block CSS
+
+    body
+        // loader 
+        #loader
+            img(src="/img/rosa-pampili.svg", alt="Loader Aguarde um instante")
+        //- esse tag deixa o footer sempre no rodapé
+        //- Obs: Caso o tamanho do footer mude ajustar na classe CSS
+        .wrraper
+            block content
+
+        
+        footer
+            .container
+                .logo-biz.center-block
+                        img.img-responsive(src="/img/logo.png", alt="Logotipo HappyBiz")
+
+
+                        
+        block scriptsJS
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+            

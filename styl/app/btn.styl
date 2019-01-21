@@ -1,0 +1,79 @@
+$btn-boder-radius = 5px
+$color-danger = #c10500
+$color-sucess = #5cb85c
+$color-warning = #f0ad4e
+
+.btn
+	border-radius $btn-boder-radius
+	border-radius 10px
+	border 0
+	color white
+	background-color: $colors['main']
+	border-bottom 3px solid $colors['second']
+	transition color 1s, box-shadow 1s
+	&:hover
+		background-color: lighten($colors['main'], 20%)
+		color: white;
+		box-shadow: 2px 0px 8px $shadow-color
+	&:focus
+		background-color: lightness($colors['main'], 20%)
+		color: $btn-text
+	&:active
+		background-color: lighten($colors['main'], 20%)
+		color: $btn-text
+
+.btn-lg 
+	padding 15px 20px
+.btn:hover
+.btn:focus
+.btn.focus
+	color: white
+.btn-voltar
+	background-color: $colors['main']
+	border-radius 10px
+	border 0
+	padding 5px 15px
+	color white
+	box-shadow 2px 2px 0 1px $colors['second']
+
+
+.btn-pampili
+	border-bottom 3px solid $colors['second']
+.btn-finalizar
+	padding 15px 30px
+
+		
+
+
+.btn-danger
+.btn-success
+.btn-warning
+	border-radius $btn-boder-radius
+	padding 10px 40px
+	color: $btn-text
+
+.btn-danger
+	background-color $color-danger
+	&:hover
+		background-color lightness($color-danger, 40%)
+
+.btn-success
+	background-color $color-sucess
+	&:hover
+		background-color lightness($color-sucess, 40%)
+
+.btn-warning
+	background-color $color-warning
+	&:hover
+		background-color lightness($color-warning, 40%)
+
+for btns, value in $colors
+	.btn-{btns}
+		background-color value
+		&:hover
+			background-color alpha(value,  1)
+
+
+@media screen and (max-width: 420px)
+	.btn-voltar
+		padding 5px 5px

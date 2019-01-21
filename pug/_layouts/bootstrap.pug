@@ -1,0 +1,29 @@
+block settings
+    - var title = 'Bootstrap Guide'
+    - var faceTitle = "Bootstrap Guide"
+    - var faceDesc= "texto para descrever o conteudo"
+    - var faceImage = "http://euro-travel-example.com/thumbnail.jpg"
+    - var faceUrl = "http://euro-travel-example.com/index.htm"
+    - var _DEV = true
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        title #{title}
+        if _DEV
+            // build:css css/all.biz.min.css
+            link(rel="stylesheet", href="css/plugins.css")
+            link(rel="stylesheet", href="css/style.css")
+            // endbuild
+        else
+            link(rel="preload", href="css/all.biz.min.css", as="style")            
+        block CSS
+
+    body
+        block content
+
+        block scriptsJS
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+            

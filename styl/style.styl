@@ -1,0 +1,187 @@
+// se for usar font-face coloque neste arquivo
+@import 'app/font-face'
+
+// principais variaveis do projeto
+@import 'app/variables'
+
+// arquivos com classes uteis
+@import 'app/utils'
+
+// principais funcoes 
+@import 'app/mixins'
+
+// cores de texto e bgs
+@import 'app/colors'
+
+// caracteristicas das fontes
+@import 'app/fonts'
+
+// se precisar estilizar alguma tag
+@import 'app/tags'
+
+// formularios
+@import 'app/input'
+@import 'app/checkbox'
+
+
+// botões
+@import 'app/btn'
+
+// margin e paddings
+@import 'app/gaps'
+
+// estilo para o header
+@import 'app/header'
+
+// estilo para o footer
+@import 'app/content'
+
+/*!
+ * nova página
+ */
+@import 'app/range'
+@import 'app/pesquisa'
+@import 'app/indicadores'
+/*!
+ * nova página
+ */
+
+// estilo para o footer
+@import 'app/cronograma'
+
+// estilo para o footer
+
+
+@import 'app/bases'
+@import 'app/materiais'
+
+// estilo para o footer
+@import 'app/login'
+
+// estilo para o footer
+@import 'app/loader'
+
+// estilo para o footer
+@import 'app/footer'
+
+// animações css
+@import 'app/animation'
+
+// estilos para serem inseridos apenas no browser EDGE
+@import 'app/edgeOnly'
+
+@import 'app/modal-conferencia'
+
+
+.seta-meteriais
+    max-width 15px
+    float right 
+    background-color $color
+    margin-top 5px
+
+.com-pai
+    padding-left 0
+    margin-bottom 0
+    background-color #f7f7f7
+
+.img-abrir
+    transform rotate(0)
+    transition .5s
+.img-abrir-rot 
+    transform rotate(180deg)
+
+.table-flex
+    display flex 
+    justify-content space-between
+    padding-left 0
+    padding 10px 5px
+    border-bottom 2px solid lightgray
+    margin-bottom 0
+    &.header
+        font-weight bolder
+    & > *
+        list-style none
+        align-self auto
+        width 14.8%
+        &:nth-child(2)
+            width 50%  
+        &.header
+            font-weight bolder
+        &.icone-table
+            width 5%
+        &.pai 
+            width 100%
+        img 
+            width: 45px
+
+@media screen and (max-width: 1513px)
+    .table-flex
+        padding 10px 5px
+        border-bottom 2px solid lightgray
+        & > *
+            width 14.8%
+            &:nth-child(2)
+                width 46%  
+            &.header
+                font-weight bolder
+            &.icone-table
+                width 7%
+            &.pai 
+                width 100%
+            img 
+                width: 40px
+
+@media screen and (max-width: 996px)
+    .table-flex
+        padding 10px 5px
+        border-bottom 2px solid lightgray
+        & > *
+            list-style none
+            align-self auto
+            width 14.8%
+            &:nth-child(2)
+                width 40%  
+            &.header
+                font-weight bolder
+            &.icone-table
+                width 10%
+            img 
+                width: 40px
+
+@media screen and (max-width: 642px)
+    .table-flex
+        padding 10px 5px
+        border-bottom 2px solid lightgray
+        & > *
+            width 20%
+            &:nth-child(2)
+                width 40%  
+            &.header
+                font-weight bolder
+            &.icone-table
+                width 10%
+            img 
+                width: 30px
+
+@media screen and (max-width: 520px)
+    .table-flex
+        & > *
+            font-size 10px
+
+
+@media screen and (max-width: 340px)
+    .table-flex
+        padding 10px 5px
+        border-bottom 2px solid lightgray
+        & > *
+            font-size 8px
+            width 25%
+            &:nth-child(2)
+                width 35%  
+            &.header
+                font-weight bolder
+            &.icone-table
+                width 10%
+            img 
+                width: 25px
+
