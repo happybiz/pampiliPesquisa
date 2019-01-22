@@ -2296,7 +2296,8 @@ input[type=range]:focus::-ms-fill-upper {
     max-width: 150px;
   }
 }
-#loader {
+#loader,
+#loader-biz {
   position: fixed;
   left: 0;
   top: 0;
@@ -2311,7 +2312,8 @@ input[type=range]:focus::-ms-fill-upper {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#loader > * {
+#loader > *,
+#loader-biz > * {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2319,17 +2321,39 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-animation: pulsar 1s infinite;
           animation: pulsar 1s infinite;
 }
+#loader-biz {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#loader-biz > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 50px;
+  -webkit-animation: pulsar 1s infinite;
+          animation: pulsar 1s infinite;
+}
 footer {
   background-color: #e257a7;
   padding: 1rem 1rem;
 }
-.logo-biz {
+footer .logo-biz {
+  max-width: 5rem;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+footer .logo-biz img {
+  margin: auto;
+}
+footer .logo-pampili {
   max-width: 10rem;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 0px;
 }
-.logo-biz img {
+footer .logo-pampili img {
   margin: auto;
 }
 .pulsar {

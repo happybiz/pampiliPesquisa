@@ -1,0 +1,24 @@
+extends ./_layouts/pesquisa.pug
+
+block content
+    article.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
+        // sair
+        //.logout
+            img(src="img/sair.svg", alt="Log Out")
+
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="/img/rosa-pampili.svg", alt="Pampili")
+        .envelope-wrraper
+            .env-title
+                h3.text-center
+                    span Obrigado! <br>Por responder.
+                h5.text-center.pd-40-top Nação Pampili
+                .rodape-pesquisa
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/reconhecimento.html"') Sair
+
+        canvas#canvas
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/heartGame.js")

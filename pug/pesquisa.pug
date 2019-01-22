@@ -1,0 +1,68 @@
+extends ./_layouts/indicadores.pug
+
+block content
+
+
+    article.relative
+        // sair
+        .logout
+            img(src="img/sair.svg", alt="Log Out")
+        .env-info
+            button#voltar.btn-voltar &nbsp;
+                img.voltar(src="/img/seta.svg" style="float:left")
+                | Voltar
+            
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="/img/rosa-pampili.svg", alt="Pampili")
+        .envelope-wrraper
+            // formulario
+            .container.pesquisa
+                .col-sm-12
+                    h2.text-center Qual a sua entrega?
+                // component da pesquisa
+                .col-sm-12.componente-pesquisa.re-empre-res
+                    .wrraper-pergunta.pd-40
+                        h3.pergunta.text-center Indique seu grau de concordância com a frase abaixo
+                        .row.pd-20
+                            .concordancia
+                                input.hidden(type="number", name="")
+                                .displayFlexSliderIcon                                
+                                    .content-pesquisa
+                                        img.center-block.img-responsive.status-cara(src="img/indicadores/3.png", alt="Imagem representado a situação da pergunta")
+                                        p.escolha-user Deslize o botão abaixo;
+
+                                .slider(style="margin-top:-45px")
+                                    input.form-control(type="range", min="0", max="10", step="1", class="rangeSlider")
+
+                // component da pesquisa
+                .col-sm-12.componente-pesquisa.re-empre-res
+                    .wrraper-pergunta.pd-40
+                        h3.pergunta.text-bold Indique seu grau de concordância com a frase abaixo
+                        .row.pd-20
+                            .concordancia
+                                input.hidden(type="number", name="")
+                                .displayFlexSliderIcon                                
+                                    .content-pesquisa
+                                        img.center-block.img-responsive.status-cara(src="img/indicadores/3.png", alt="Imagem representado a situação da pergunta")
+                                        p.escolha-user Deslize o botão abaixo;
+
+                                .slider(style="margin-top:-45px")
+                                    input.form-control(type="range", min="0", max="10", step="1", class="rangeSlider")
+
+
+
+            .env-rodape.text-center.pd-80-bottom.pd-40-top
+                .rodape-base
+                    button.btn-voltar#voltar &nbsp;
+                        img.voltar(src="/img/seta.svg" style="float:left") 
+                        | Voltar                              
+                                    
+                    button.btn.btn-lg.btn-pampili.btn-finalizar(onclick='') Finalizar
+
+
+                
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/pesquisa.js")

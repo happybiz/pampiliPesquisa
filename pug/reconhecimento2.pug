@@ -2,9 +2,6 @@ extends ./_layouts/pesquisa.pug
 
 block content
     article.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
-        // sair
-        //.logout
-            img(src="img/sair.svg", alt="Log Out")
 
         .envelope-wrraper
             .env-title
@@ -13,8 +10,7 @@ block content
             .well.pesquisa-total
                 .pesquisa.clearfix
                     p.text-center.mg-20-top.title-pesquisa Selecione suas 3 marcas favoritas
-                    .pesquisa-wrraper-flex
-                        
+                    .pesquisa-wrraper-flex                        
                         button.btn.btn-marca-escolha
                             img.img-responsive(src="img/pesquisa/arezzo.png")
                             input(type="checkbox" name="chk1" id="item1" value="arezzo" class="inputCheck" autocomplete="off")
@@ -98,7 +94,7 @@ block content
 
                 hr
                 .rodape-pesquisa-marca
-                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/reconhecimento2.html"', disabled) Finalizar
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/final.html"', disabled) Finalizar
 
         canvas#canvas
 
