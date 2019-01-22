@@ -1375,6 +1375,20 @@ input.input-lg {
 .logout img {
   max-width: 40px;
 }
+.btn-marca-escolha {
+  background-color: #d3d3d3;
+  transition: 0.5s;
+}
+.btn-marca-escolha > img {
+  max-height: 30px;
+}
+.pesquisa-wrraper-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .btn-pesquisa {
   background-color: #d3d3d3;
   transition: 0.5s;
