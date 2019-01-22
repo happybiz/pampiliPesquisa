@@ -1,7 +1,6 @@
 
 (function ($){
 
-
 	window.addEventListener('load', function(){
 		// retirar o loader da tela quando tudo estiver pronto
 		setTimeout(function(){
