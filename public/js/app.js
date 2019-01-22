@@ -20,4 +20,33 @@
 		$(this).toggleClass("check");
 	});
 
+	$('.colecao-wrraper-flex').slick({
+		centerMode: true,
+		centerPadding: '60px',
+		slidesToShow: 3,
+        prevArrow: '<img src="/img/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
+        nextArrow: '<img src="/img/pesquisa/colecao/seta-direita.png"  class="slick-next" alt="Esquerda" />',
+		infinite:false,
+		responsive: [
+		  {
+			breakpoint: 768,
+			settings: {
+			  arrows: true,
+			  centerMode: true,
+			  centerPadding: '40px',
+			  slidesToShow: 3
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  arrows: true,
+			  centerMode: true,
+			  centerPadding: '40px',
+			  slidesToShow: 1
+			}
+		  }
+		]
+	  });
+
 })($)
