@@ -19,5 +19,4 @@
 		$(this).toggleClass("check");
 	});
 
-
 })($)
