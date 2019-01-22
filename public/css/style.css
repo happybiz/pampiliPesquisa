@@ -1375,12 +1375,48 @@ input.input-lg {
 .logout img {
   max-width: 40px;
 }
-.btn-marca-escolha {
-  background-color: #d3d3d3;
-  transition: 0.5s;
+.rodape-pesquisa-marca {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 7;
 }
-.btn-marca-escolha > img {
-  max-height: 30px;
+.btn-marca-escolha {
+  position: relative;
+  background-color: #e8e8e8;
+  transition: 0.5s;
+  border: 1px solid #d3d3d3;
+}
+.btn-marca-escolha .inputCheck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btn-marca-escolha:focus {
+  background-color: #e8e8e8;
+}
+.btn-marca-escolha img {
+  max-height: 50px;
+  margin: auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+.btn-marca-escolha.ativo {
+  background-color: #fff;
+  border: 2px solid #ec529c;
+  box-shadow: 5px 2px 10px rgba(31,18,18,0.51), 0 0 20px #e257a6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 3;
+}
+.btn-marca-escolha.ativo img {
+  background: #fff;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .pesquisa-wrraper-flex {
   display: -webkit-box;
@@ -1388,10 +1424,23 @@ input.input-lg {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.pesquisa-wrraper-flex > button {
+  cursor: pointer;
+  width: 15.9%;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 .btn-pesquisa {
   background-color: #d3d3d3;
   transition: 0.5s;
+  cursor: pointer;
 }
 .btn-pesquisa img {
   -webkit-filter: grayscale(100%);
@@ -1453,6 +1502,17 @@ input.input-lg {
     margin: 10px;
     font-size: 2rem;
     height: 150px;
+  }
+  .pesquisa-wrraper-flex > button {
+    width: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .rodape-pesquisa-marca {
+    bottom: 10px;
   }
 }
 @media screen and (max-width: 420px) {

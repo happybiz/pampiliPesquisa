@@ -162,19 +162,61 @@
     img 
         max-width 40px
 
+.rodape-pesquisa-marca
+    position fixed
+    bottom 80px
+    left 0
+    width 100%
+    z-index 7
+
 .btn-marca-escolha
-    background-color: lightgray
+    position relative
+    background-color: #e8e8e8
     transition .5s
-    & > img 
-        max-height 30px
+    border: 1px solid lightgray
+    .inputCheck
+        position absolute
+        top: 0
+        left 0
+        width: 100%;
+        height: 100%;
+        opacity 0
+    &:focus
+        background-color: #e8e8e8
+    img 
+        max-height 50px
+        margin auto
+        filter grayscale(1)
+    &.ativo
+        background-color white
+        border: 2px solid #ec529c;
+        box-shadow: 5px 2px 10px rgba(31,18,18,0.51), 0 0 20px #e257a6
+        transform scale(1.2)
+        z-index 3
+        img
+            background: white;
+            filter grayscale(0)
+
 
 .pesquisa-wrraper-flex
     display flex
     flex-wrap wrap
+    justify-content: space-evenly
+    & > button
+        cursor pointer
+        width 15.9%
+        padding-bottom 20px
+        padding-top 15px
+        margin-bottom 10px
+        margin-top 10px
+        text-align center
+
+
 
 .btn-pesquisa
     background-color: lightgray
     transition .5s
+    cursor pointer
     img 
         filter: grayscale(100%);
     &:hover
@@ -223,7 +265,16 @@
             margin 10px
             font-size remify(20px)
             height 150px
-
+    .pesquisa-wrraper-flex
+        & > button
+            width 30%
+            margin-bottom 10px
+            text-align center
+            margin-top: 5px;
+            padding-bottom 10px
+            padding-top 10px
+    .rodape-pesquisa-marca
+        bottom 10px
 
 
 
