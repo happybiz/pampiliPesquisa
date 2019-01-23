@@ -2347,14 +2347,22 @@ footer .logo-biz {
 footer .logo-biz img {
   margin: auto;
 }
+footer .footer {
+  height: 40px;
+}
 footer .logo-pampili {
   max-width: 10rem;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 0px;
-}
-footer .logo-pampili img {
-  margin: auto;
+  background-image: url("/img/logo.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pulsar {
   -webkit-animation: pulsar 2s infinite;
@@ -2653,6 +2661,10 @@ footer .logo-pampili img {
   width: 60px !important;
   height: 60px !important;
 }
+.btn-finalizar {
+  -webkit-filter: grayscale(45%);
+          filter: grayscale(45%);
+}
 @media screen and (max-width: 1330px) {
   .curti,
   .amei,
@@ -2670,6 +2682,15 @@ footer .logo-pampili img {
   .naoGostei {
     width: 24px;
     height: 24px;
+  }
+  .titulo-colecao {
+    line-height: 45px;
+  }
+  .pesquisa-total {
+    margin-top: 20px;
+  }
+  .rodape-pesquisa {
+    padding-top: 0;
   }
 }
 @supports (-ms-ime-align: auto) {
@@ -2712,6 +2733,75 @@ footer .logo-pampili img {
   font-size: 14px;
   text-align: center;
   float: right;
+}
+body.tweenie h1,
+body.tweenie h2,
+body.tweenie h3,
+body.tweenie h4,
+body.tweenie h5,
+body.tweenie h6 {
+  color: #000;
+}
+body.tweenie .linha-rosa {
+  border-bottom: 2px solid #eccaca;
+}
+body.tweenie .btn-pampili {
+  border-bottom: 3px solid #eccaca;
+  background: #eccaca;
+  background: linear-gradient(to right, #eccaca 0%, #a4d4d6 100%);
+  color: #000;
+}
+body.tweenie footer {
+  background: #eccaca;
+  background: linear-gradient(to right, #eccaca 0%, #a4d4d6 100%);
+}
+body.tweenie footer .logo-pampili {
+  max-width: 10rem;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-image: url("/img/pesquisa/tween-branco.svg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-presente-escolha {
+  position: relative;
+  background-color: #e8e8e8;
+  transition: 0.5s;
+  border: 1px solid #d3d3d3;
+}
+.btn-presente-escolha .inputCheck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btn-presente-escolha:focus {
+  background-color: #e8e8e8;
+}
+.btn-presente-escolha img {
+  max-height: 200px;
+  margin: auto;
+}
+.btn-presente-escolha.ativo {
+  background-color: #fff;
+  border: 2px solid #ec529c;
+  box-shadow: 5px 2px 10px rgba(31,18,18,0.51), 0 0 20px #e257a6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 3;
+}
+.btn-presente-escolha.ativo img {
+  background: #fff;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .seta-meteriais {
   max-width: 15px;
