@@ -2640,6 +2640,14 @@ footer .logo-pampili img {
   top: 0;
   background-size: cover;
 }
+.btn-cinza {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.btn-ativo {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
 @supports (-ms-ime-align: auto) {
   .selector {
     color: #f00;

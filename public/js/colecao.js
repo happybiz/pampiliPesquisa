@@ -1,7 +1,7 @@
 (function ($){
     $('.colecao-wrraper-flex').slick({
         centerMode: true,
-        centerPadding: '60px',
+        //centerPadding: '60px',
         slidesToShow: 3,
         prevArrow: '<img src="/img/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
         nextArrow: '<img src="/img/pesquisa/colecao/seta-direita.png"  class="slick-next" alt="Esquerda" />',
@@ -36,8 +36,11 @@
 
     $('.botoes-colecao button').on('click', function(){
         $('.slick-current .botoes-colecao button').removeClass('borda-check');
+        $('.slick-current .botoes-colecao button').removeClass('btn-cinza, btn-ativo');
+        $('.slick-current .botoes-colecao button').toggleClass('btn-cinza');
         $(this).toggleClass('borda-check'); 
         $(this).parents('.bg-colecao').addClass('img-certo');
+        $(this).toggleClass('btn-ativo');
 
         var count = $('.img-certo').length;
         var universal = $('.slick-slide').length;
