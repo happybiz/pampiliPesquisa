@@ -2803,6 +2803,123 @@ body.tweenie footer .logo-pampili {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
+.componente-pesquisa {
+  margin-top: 30px;
+}
+.sub-pergunta,
+.pergunta-vida,
+.resposta-potencia {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.hidden {
+  display: none !important;
+}
+.displayFlex7pesquisa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.displayFlex7pesquisa > * {
+  background-color: #808080;
+  transition: 1s;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.displayFlex7pesquisa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.displayFlex7pesquisa > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.displayFlex7pesquisa > * p {
+  margin: 0;
+  padding: 0;
+}
+.displayFlex7pesquisa > div.ativo {
+  border-bottom: 0;
+  background-color: #e257a7;
+}
+.pd {
+  padding: 40px 40px 10px 40px;
+}
+.pontos {
+  position: fixed;
+  background-color: #b00069;
+  bottom: 0;
+  left: 20px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.pontos p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.pontos p span {
+  font-size: 20px;
+}
+.valorInputColuna,
+.valorInput {
+  width: 35px;
+  height: 35px;
+  background-color: #a9a9a9;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 5px;
+  margin: 0 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #a9a9a9;
+  float: left;
+  transition: 1s;
+}
+.valorInputColuna.ativo,
+.valorInput.ativo {
+  background-color: #f00;
+}
+.valorInputColuna span,
+.valorInput span {
+  font-size: 18px;
+}
+.valorInputColuna.block,
+.valorInput.block {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .seta-meteriais {
   max-width: 15px;
   float: right;

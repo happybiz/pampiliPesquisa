@@ -1,0 +1,34 @@
+extends ./_layouts/indicadores.pug
+
+block content
+    article.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="/img/rosa-pampili.svg", alt="Pampili")
+        .envelope-wrraper
+            .env-title
+                h3.text-center.titulo-colecao
+                    span.linha-rosa Felicidade Interna Pampili
+            .well.pesquisa-total
+                .pesquisa.clearfix
+                    .col-sm-12.componente-pesquisa.re-empre-res
+                        .pd
+                            h5.pergunta.text-bold.pd-40-bottom Indique seu grau de concordância com a frase abaixo
+                            .row.pd-20-top
+                                each index in ["Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. ", "Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm.", " Mah você mora com o papai ou com a mamãem? É bom ou não éam?"]
+                                    .sub-pergunta
+                                        .concordancia
+                                            input.hidden(type="number", name="", class="somar", value="0")
+                                            p.text-bold Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm. Mah você mora com o papai ou com a mamãem? É bom ou não éam?
+                                            .displayFlex7pesquisa
+                                                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                                                    .numero.pegar-numero(data-number=val)
+                                                        p #{val}
+
+                hr
+                .rodape-pesquisa-marca
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/final.html"', disabled) Finalizar
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/fip.js")
