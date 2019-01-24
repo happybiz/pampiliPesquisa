@@ -10,6 +10,11 @@
         var n = $("input[name='chk1']:checked").length;
         var check = $(this).children('input');
 
+        if(n > 3){
+            $(check).attr('checked', false)
+            return
+        }
+
         if(n === 3){
             $('.btn-finalizar').attr('disabled', false);
         }else{
@@ -20,11 +25,6 @@
         if($(this).hasClass('ativo')){
             $(this).removeClass('ativo');
             $(check).attr('checked', false);
-            return
-        }
-
-        if(n > 3){
-            $(check).attr('checked', false)
             return
         }
             
