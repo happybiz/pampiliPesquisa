@@ -326,7 +326,7 @@ select.form-control {
 }
 select,
 select.form-control {
-  background-image: url("../img/arrow.png");
+  background-image: url("../images/arrow.png");
   background-position: calc(100% - 20px) 1em;
   background-size: 15px;
   background-repeat: no-repeat;
@@ -1191,7 +1191,7 @@ input.input-lg {
   cursor: pointer;
 }
 .aberto {
-  background-image: url("../img/aberto.svg");
+  background-image: url("../images/aberto.svg");
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
@@ -1207,7 +1207,7 @@ input.input-lg {
   background-color: #fff;
 }
 .fechado {
-  background-image: url("../img/fechado.svg");
+  background-image: url("../images/fechado.svg");
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -1251,7 +1251,7 @@ input.input-lg {
   position: absolute;
   bottom: -5px;
   right: -20px;
-  background-image: url("../img/check.svg");
+  background-image: url("../images/check.svg");
 }
 .envelope-wrraper .desc {
   font-size: 22px;
@@ -1733,7 +1733,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #e257a7;
   width: 140px;
   height: 140px;
-  background-image: url("../img/loros.png");
+  background-image: url("../images/loros.png");
   background-position: center 80%;
   background-repeat: no-repeat;
   margin: auto;
@@ -2362,7 +2362,7 @@ footer .logo-pampili {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 0px;
-  background-image: url("/img/logo.png");
+  background-image: url("/images/logo.png");
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -2770,7 +2770,7 @@ body.tweenie footer .logo-pampili {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 0px;
-  background-image: url("/img/pesquisa/tween-branco.svg");
+  background-image: url("/images/pesquisa/tween-branco.svg");
   width: 100%;
   height: 100%;
   background-position: center center;
