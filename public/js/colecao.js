@@ -28,9 +28,15 @@
 
     // Adicionar e retirar o attr dos botoes quando clica nas setas
     $('.slick-current button').attr('disabled', false);  
-    $(slider).on('afterChange',function(){ 
+    $(slider).on('afterChange',function(event, slick, currentSlide){ 
+        var a = $(".slick-slide").length - 1
+        
         $('.slick-slide button').attr('disabled', true);      
         $('.slick-current button').attr('disabled', false);
+        
+        if(a >= currentSlide){
+          return
+        }
         $('.slick-current .botoes-colecao button').removeClass('btn-cinza');
     });
 

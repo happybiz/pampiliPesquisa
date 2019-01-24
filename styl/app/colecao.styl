@@ -13,12 +13,13 @@
 
 .bg-colecao
     background-color: #ffffff
-    margin-left: 25px
+    margin-left: 18px
     padding: 10px 10px
     box-shadow: 0 0 5px #b1afaf
 
 .botoes-colecao
     text-align: center
+    padding-top: 10px;
     & > *
         margin-left: 5px
         background-color: transparent
@@ -99,7 +100,16 @@
     filter: grayscale(45%);
 
 .slick-prev
-    z-index 999
+    z-index 9
+
+.slick-next 
+    visibility: hidden
+
+.hr
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 0;
+    margin-bottom: 0;
 
 @media screen and (max-width: 1330px)
     .curti,
@@ -115,8 +125,8 @@
     .amei,
     .indiferente,
     .naoGostei
-        width: 24px
-        height 24px
+        width: 28px
+        height 28px
     
     .titulo-colecao
         line-height: 45px
