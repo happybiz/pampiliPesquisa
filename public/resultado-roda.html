@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta tags para redesociais-->
+    <meta property="og:title" content="Pesquisa Pampili">
+    <meta property="og:description" content="Pesquisa Pampili">
+    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+    <meta property="twitter:title" content="Pesquisa Pampili">
+    <meta property="twitter:description" content="Pesquisa Pampili">
+    <meta name="description" content="Pesquisa Pampili">
+    <!-- cor do thema -->
+    <meta name="theme-color" content="#e257a7">
+    <title>Pesquisa Pampili</title>
+    <!-- build:css css/all.biz.min.css-->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick-theme.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader"><img src="/img/rosa-pampili.svg" alt="Loader Aguarde um instante"></div>
+    <div class="wrraper clearfix">
+      <article class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+        <!-- sair-->
+        <!--.logout
+        img(src="img/sair.svg", alt="Log Out")
+        
+        -->
+        <div class="envelope-wrraper">
+          <!--.env-title
+          h3.text-center.titulo-colecao
+              span.linha-rosa O que você achou dos looks?
+          -->
+          <!--.well.pesquisa-total
+          .pesquisa.clearfix
+              p.text-center.mg-20-top.title-pesquisa Dê sua nota para os looks abaixo:
+              .colecao-wrraper-flex
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/03-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao1")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao1")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao1")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao1")
+                  
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/04-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao2")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao2")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao2")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao2")
+                  
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/05-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao3")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao3")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao3")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao3")
+                  
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/08-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao4")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao4")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao4")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao4")
+                  
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/10-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao5")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao5")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao5")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao5")
+                  
+                  .col-sm-12.bg-colecao
+                      img.img-responsive.img-colecao.center-block.pd-20-bottom(src="img/pesquisa/colecao/02-Campanha-Pampili.jpg", alt="Coleção moranguinho")
+                      hr
+                      .botoes-colecao.pd-20-top.pd-20-bottom
+                          button.curti.btn(disabled)
+                              input(type="radio" class="input-colecao" name="colecao6")
+                          button.amei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao6")
+                          button.indiferente.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao6")
+                          button.naoGostei.btn.btn-default(disabled)
+                              input(type="radio" class="input-colecao" name="colecao6")
+          
+          
+          hr
+          .rodape-pesquisa
+              button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/final.html"', disabled) Finalizar
+          
+          -->
+        </div>
+        <canvas id="canvas"></canvas>
+      </article>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer center-block">
+          <div class="logo-pampili"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/heart.js"></script>
+    <script src="js/resultado-roda.js"></script>
+  </body>
+</html>
