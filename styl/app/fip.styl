@@ -18,6 +18,7 @@
 .displayFlex7pesquisa
     display: flex
     justify-content: center
+    flex-wrap: wrap
     & > *
         background-color: #afadad;
         transition: 1s;
@@ -25,8 +26,7 @@
         text-align center
         color white
         align-self: center
-        padding-top: 10px
-        padding-bottom: 10px
+        padding-top: 8px
         cursor pointer
         width: 40px
         height: 40px
@@ -83,3 +83,8 @@
 
 .numero
     margin-right: 25px
+
+@media screen and (max-width: 999px)
+    .numero 
+        margin-right: 5px;
+        margin-top: 5px;

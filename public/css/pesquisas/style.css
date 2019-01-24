@@ -1490,6 +1490,13 @@ input.input-lg {
 .rodape-pesquisa {
   padding-top: 30px;
 }
+.pesquisas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 @media screen and (max-width: 956px) {
   .wrraper {
     padding-top: 5px;
@@ -2586,25 +2593,25 @@ footer .logo-pampili {
   border-radius: 20px;
 }
 .curti {
-  background-image: url("/img/pesquisa/colecao/curti.png");
+  background-image: url("/images/pesquisa/colecao/curti.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .amei {
-  background-image: url("/img/pesquisa/colecao/amei.png");
+  background-image: url("/images/pesquisa/colecao/amei.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .indiferente {
-  background-image: url("/img/pesquisa/colecao/indiferente.png");
+  background-image: url("/images/pesquisa/colecao/indiferente.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .naoGostei {
-  background-image: url("/img/pesquisa/colecao/naoGostei.png");
+  background-image: url("/images/pesquisa/colecao/naoGostei.png");
   width: 40px;
   height: 40px;
   background-position: center center;
@@ -2638,7 +2645,7 @@ footer .logo-pampili {
 }
 .img-certo::after {
   content: '';
-  background-image: url("/img/pesquisa/colecao/certo.png");
+  background-image: url("/images/pesquisa/colecao/certo.png");
   width: 50px;
   height: 50px;
   background-position: center center;
@@ -2664,6 +2671,9 @@ footer .logo-pampili {
 .btn-finalizar {
   -webkit-filter: grayscale(45%);
           filter: grayscale(45%);
+}
+.slick-prev {
+  z-index: 999;
 }
 @media screen and (max-width: 1330px) {
   .curti,
@@ -2826,6 +2836,8 @@ body.tweenie footer .logo-pampili {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .displayFlex7pesquisa > * {
   background-color: #afadad;
@@ -2836,8 +2848,7 @@ body.tweenie footer .logo-pampili {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -2904,6 +2915,12 @@ body.tweenie footer .logo-pampili {
 }
 .numero {
   margin-right: 25px;
+}
+@media screen and (max-width: 999px) {
+  .numero {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
 }
 .hidden {
   display: none !important;

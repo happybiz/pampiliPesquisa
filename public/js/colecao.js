@@ -2,8 +2,7 @@
     var slider = $('.colecao-wrraper-flex').slick({
         centerMode: true,
         slidesToShow: 3,
-        prevArrow: '<img src="/img/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
-        nextArrow: '<img src="/img/pesquisa/colecao/seta-direita.png"  class="slick-next" alt="Esquerda" />',
+        prevArrow: '<img src="/images/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
         infinite:false,
         responsive: [
         {
@@ -29,7 +28,7 @@
 
     // Adicionar e retirar o attr dos botoes quando clica nas setas
     $('.slick-current button').attr('disabled', false);  
-    $('.slick-prev, .slick-next').on('click',function(){ 
+    $(slider).on('afterChange',function(){ 
         $('.slick-slide button').attr('disabled', true);      
         $('.slick-current button').attr('disabled', false);
         $('.slick-current .botoes-colecao button').removeClass('btn-cinza');

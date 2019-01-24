@@ -2,6 +2,9 @@
 
 
 	function corElementos(elemento, evt){
+        var terminou = true;
+        var inputs = $('.somar');
+
 
         // no mouser hover ou padrao sera cinza
         // colocar o bg-tual em todos "PRÈ" irmãos
@@ -15,9 +18,8 @@
             $(elemento).siblings().removeClass('bg-atual ativo');
             $(elemento).removeClass('bg-atual ativo')
             $(elemento).parents('.concordancia').children('.somar').val(0);
-            
-            somar();
-            mensagem();
+            $('.btn-finalizar').attr('disabled', true);
+
             return    
         }
 
@@ -25,6 +27,18 @@
         $(elemento).parents('.concordancia').children('.somar').val(valor);
         $(elemento).addClass('ativo');
         $(elemento).prevAll().addClass('ativo');
+        
+        $(inputs).each(function(index){
+            var valor = parseInt($(this).val());
+            if(valor === 0){
+                terminou = false;
+                }
+        });
+
+        if(terminou){
+            $('.btn-finalizar').attr('disabled', false);
+            return
+        }
     }    
     
 	$('.pegar-numero').on('click', function(e){

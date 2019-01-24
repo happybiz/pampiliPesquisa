@@ -15,7 +15,7 @@ var config = {
 	// arquivos que o gulp espera por moficação
 	assistir 	: [ './styl/**/*.styl',  './lib/**/*.styl', './pug/**/*.pug'],	
 	srcStylus	: './styl/*.styl',	
-	destCSS 	: './public/css/',
+	destCSS 	: './public/css/pesquisas',
 	distCSS 	: './dist/css',
 	distJS 		: './dist/js',
 	disHtml		:  './dist',
