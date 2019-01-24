@@ -3,15 +3,7 @@ extends ./_layouts/indicadores.pug
 block content
 
 
-    article.relative
-        // sair
-        .logout
-            img(src="images/sair.svg", alt="Log Out")
-        .env-info
-            button#voltar.btn-voltar &nbsp;
-                img.voltar(src="/images/seta.svg" style="float:left")
-                | Voltar
-            
+    article.relative  
         .pampili-logo
             a(href="/")
                 img.img-responsive(src="/images/rosa-pampili.svg", alt="Pampili")
@@ -52,13 +44,9 @@ block content
 
 
 
-            .env-rodape.text-center.pd-80-bottom.pd-40-top
-                .rodape-base
-                    button.btn-voltar#voltar &nbsp;
-                        img.voltar(src="/images/seta.svg" style="float:left") 
-                        | Voltar                              
-                                    
-                    button.btn.btn-lg.btn-pampili.btn-finalizar(onclick='') Finalizar
+                .rodape-pesquisa                                      
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/final.html"', disabled) Finalizar
+
 
 
                 

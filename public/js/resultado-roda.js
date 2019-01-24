@@ -125,7 +125,7 @@
           if(rotacao > 126  && rotacao < 230 ){
               ctx.save();
               //ctx.scale(1, -1);
-              ctx.translate(0 + (rectW * .2), 0 - (rectH / 2 + 5));  
+              ctx.translate(0 + (rectW * .145), 0 - (rectH / 2 + 5));  
               ctx.scale(-1, -1);
               ctx.font = "bold 24px Flexo";
               ctx.textAlign="end"; 

@@ -1497,6 +1497,9 @@ input.input-lg {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.slider {
+  padding: 0 20px;
+}
 @media screen and (max-width: 956px) {
   .wrraper {
     padding-top: 5px;
