@@ -7,6 +7,7 @@
         // colocar o bg-tual em todos "PRÈ" irmãos
         // caso os pontos passe a quantidade limite retorne sem fazer nada
         var valor       = elemento.getAttribute('data-number');
+        
 
         // retorna e zera o campo
         if(evt.type === 'click' && $(elemento).hasClass('ativo')){
@@ -14,6 +15,7 @@
             $(elemento).siblings().removeClass('bg-atual ativo');
             $(elemento).removeClass('bg-atual ativo')
             $(elemento).parents('.concordancia').children('.somar').val(0);
+            
             somar();
             mensagem();
             return    

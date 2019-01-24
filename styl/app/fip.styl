@@ -7,47 +7,38 @@
     padding-bottom: 20px;
     border-bottom: 2px solid #d3d3d3;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f6f6f6;
     margin-bottom: 20px;
     border-radius: 10px;
 
 .hidden
     display: none !important;
 
-.displayFlex7pesquisa
-    display: flex;
-    justify-content: space-around;
-    & > *
-        background-color: gray;
-        transition: 1s;
-        flex: 1;
-        border: 1px solid #fff;
-        text-align: center;
-        color: #fff;
-        align-self: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        cursor: pointer;
-
 
 .displayFlex7pesquisa
     display: flex
-    justify-content: space-around
+    justify-content: center
     & > *
-        flex 1
-        border 1px solid white
+        background-color: #afadad;
+        transition: 1s;
+        border 2px solid white
         text-align center
         color white
         align-self: center
         padding-top: 10px
         padding-bottom: 10px
         cursor pointer
+        width: 40px
+        height: 40px
+        border-radius: 20px
+        box-shadow: 1px 1px 1px darkgrey;
         p
             margin: 0
             padding: 0
     & > div.ativo
         border-bottom: 0
         background-color: #e257a7
+        border 2px solid white
 
 .pd
     padding: 40px 40px 10px 40px;
@@ -89,3 +80,6 @@
     &.block
         opacity: 0.5
         cursor not-allowed
+
+.numero
+    margin-right: 25px

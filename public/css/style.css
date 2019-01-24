@@ -2812,7 +2812,7 @@ body.tweenie footer .logo-pampili {
   padding-bottom: 20px;
   border-bottom: 2px solid #d3d3d3;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f6f6f6;
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -2823,16 +2823,14 @@ body.tweenie footer .logo-pampili {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .displayFlex7pesquisa > * {
-  background-color: #808080;
+  background-color: #afadad;
   transition: 1s;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
   color: #fff;
   -ms-flex-item-align: center;
@@ -2841,27 +2839,10 @@ body.tweenie footer .logo-pampili {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
-}
-.displayFlex7pesquisa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.displayFlex7pesquisa > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border: 1px solid #fff;
-  text-align: center;
-  color: #fff;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #a9a9a9;
 }
 .displayFlex7pesquisa > * p {
   margin: 0;
@@ -2870,6 +2851,7 @@ body.tweenie footer .logo-pampili {
 .displayFlex7pesquisa > div.ativo {
   border-bottom: 0;
   background-color: #e257a7;
+  border: 2px solid #fff;
 }
 .pd {
   padding: 40px 40px 10px 40px;
@@ -2919,6 +2901,12 @@ body.tweenie footer .logo-pampili {
 .valorInput.block {
   opacity: 0.5;
   cursor: not-allowed;
+}
+.numero {
+  margin-right: 25px;
+}
+.hidden {
+  display: none !important;
 }
 .seta-meteriais {
   max-width: 15px;

@@ -12,18 +12,18 @@ block content
             .well.pesquisa-total
                 .pesquisa.clearfix
                     .col-sm-12.componente-pesquisa.re-empre-res
-                        .pd
-                            h5.pergunta.text-bold.pd-40-bottom Indique seu grau de concordância com a frase abaixo
-                            .row.pd-20-top
-                                each index in ["Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. ", "Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm.", " Mah você mora com o papai ou com a mamãem? É bom ou não éam?"]
-                                    .sub-pergunta
-                                        .concordancia
-                                            input.hidden(type="number", name="", class="somar", value="0")
-                                            p.text-bold Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm. Mah você mora com o papai ou com a mamãem? É bom ou não éam?
-                                            .displayFlex7pesquisa
-                                                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                                                    .numero.pegar-numero(data-number=val)
-                                                        p #{val}
+                        h5.pergunta.text-bold Indique seu grau de concordância com a frase abaixo
+                        .row.pd-20-top
+                            each index in ["Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. ", "Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm.", " Mah você mora com o papai ou com a mamãem? É bom ou não éam?"]
+                                .sub-pergunta
+                                    .concordancia
+                                        input.hidden(type="number", name="", class="somar", value="0")
+                                        p.text-bold Silvio Santos Ipsum ma vai pra lá. Ma vai pra lá. Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. Ma você, topa ou não topamm. Mah você mora com o papai ou com a mamãem? É bom ou não éam?
+                                        hr
+                                        .displayFlex7pesquisa
+                                            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                                                .numero.pegar-numero(data-number=val)
+                                                    p #{val}
 
                 hr
                 .rodape-pesquisa-marca
