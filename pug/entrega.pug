@@ -1,0 +1,56 @@
+extends ./_layouts/indicadores.pug
+
+block content
+
+
+    article.relative  
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="/images/rosa-pampili.svg", alt="Pampili")
+        .envelope-wrraper
+            // formulario
+            .container.pesquisa
+                .col-sm-12
+                    h2.text-center Qual a sua entrega?
+                // component da pesquisa
+                .col-sm-12.componente-pesquisa.re-empre-res
+                    .wrraper-pergunta.pd-40
+                        h3.pergunta.text-center Qual a sua entrega com o verbo Conscientizar?
+                        .row.pd-20
+                            .concordancia
+                                input.hidden(type="number", name="")
+                                .displayFlexSliderIcon                                
+                                    .content-pesquisa
+                                        img.center-block.img-responsive.status-cara(src="images/indicadores/3.png", alt="Imagem representado a situação da pergunta")
+                                        p.escolha-user Deslize o botão abaixo;
+
+                                .slider(style="margin-top:-45px")
+                                    input.form-control(type="range", min="0", max="10", step="1", class="rangeSlider")
+
+                // component da pesquisa
+                .col-sm-12.componente-pesquisa.re-empre-res
+                    .wrraper-pergunta.pd-40
+                        h3.pergunta.text-bold Qual a sua entrega com o verbo Corderosar?
+                        .row.pd-20
+                            .concordancia
+                                input.hidden(type="number", name="")
+                                .displayFlexSliderIcon                                
+                                    .content-pesquisa
+                                        img.center-block.img-responsive.status-cara(src="images/indicadores/3.png", alt="Imagem representado a situação da pergunta")
+                                        p.escolha-user Deslize o botão abaixo;
+
+                                .slider(style="margin-top:-45px")
+                                    input.form-control(type="range", min="0", max="10", step="1", class="rangeSlider")
+
+
+
+                .rodape-pesquisa                                      
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/final.html"') Finalizar
+
+
+
+                
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/pesquisa.js")
