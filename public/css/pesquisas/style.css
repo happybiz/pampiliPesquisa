@@ -1496,6 +1496,8 @@ input.input-lg {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .slider {
   padding: 0 20px;
