@@ -1,12 +1,10 @@
 
 (function ($){
-
 	window.addEventListener('load', function(){
 		// retirar o loader da tela quando tudo estiver pronto
 		setTimeout(function(){
 			$('#loader').fadeOut(200);
 		}, 1000)
-
 	});
 
 	$('input[type=radio][name=chk1]').on('change', function() {
