@@ -2594,33 +2594,23 @@ footer .logo-pampili {
   padding-top: 10px;
 }
 .botoes-colecao > * {
-  margin-left: 5px;
   background-color: transparent;
   border-radius: 20px;
 }
-.curti {
-  background-image: url("/images/pesquisa/colecao/curti.png");
-  width: 40px;
-  height: 40px;
-  background-position: center center;
+.botoes-colecao > *:hover {
+  background-color: transparent;
 }
-.amei {
-  background-image: url("/images/pesquisa/colecao/amei.png");
+.curti img {
   width: 40px;
-  height: 40px;
-  background-position: center center;
 }
-.indiferente {
-  background-image: url("/images/pesquisa/colecao/indiferente.png");
+.amei img {
   width: 40px;
-  height: 40px;
-  background-position: center center;
 }
-.naoGostei {
-  background-image: url("/images/pesquisa/colecao/naoGostei.png");
+.indiferente img {
   width: 40px;
-  height: 40px;
-  background-position: center center;
+}
+.naoGostei img {
+  width: 40px;
 }
 .slick-list {
   padding-top: 10px !important;
@@ -2638,13 +2628,15 @@ footer .logo-pampili {
   height: 100%;
   opacity: 0;
 }
-.borda-check {
+.borda-check img {
   border: 2px solid #ea078a;
   box-shadow: 0 0 10px #ea078a;
+  border-radius: 50%;
 }
-.borda-check:hover {
+.borda-check img:hover {
   border: 2px solid #ea078a;
   box-shadow: 0 0 10px #ea078a;
+  border-radius: 50%;
 }
 .img-certo {
   position: relative;

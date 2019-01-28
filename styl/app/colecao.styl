@@ -21,33 +21,29 @@
     text-align: center
     padding-top: 10px;
     & > *
-        margin-left: 5px
         background-color: transparent
         border-radius: 20px
+    & > *:hover
+        background-color: transparent
 
 .curti
-    background-image: url('/images/pesquisa/colecao/curti.png')
-    width: 40px
-    height 40px
-    background-position: center center
+    img 
+        width: 40px
+
+
+
 
 .amei
-    background-image: url('/images/pesquisa/colecao/amei.png')
-    width: 40px
-    height 40px
-    background-position: center center
+    img 
+        width: 40px
 
 .indiferente
-    background-image: url('/images/pesquisa/colecao/indiferente.png')
-    width: 40px
-    height 40px
-    background-position: center center
+    img 
+        width: 40px
 
 .naoGostei
-    background-image: url('/images/pesquisa/colecao/naoGostei.png')
-    width: 40px
-    height 40px
-    background-position: center center
+    img 
+        width: 40px
 
 .slick-list
     padding-top: 10px !important
@@ -65,11 +61,14 @@
         opacity 0
 
 .borda-check
-    border 2px solid #ea078a
-    box-shadow: 0 0 10px #ea078a
-    &:hover
+    img
         border 2px solid #ea078a
         box-shadow: 0 0 10px #ea078a
+        border-radius: 50%;
+        &:hover
+            border 2px solid #ea078a
+            box-shadow: 0 0 10px #ea078a
+            border-radius: 50%;
 
 .img-certo
     position relative
