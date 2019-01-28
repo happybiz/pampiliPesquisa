@@ -326,7 +326,7 @@ select.form-control {
 }
 select,
 select.form-control {
-  background-image: url("../img/arrow.png");
+  background-image: url("../images/arrow.png");
   background-position: calc(100% - 20px) 1em;
   background-size: 15px;
   background-repeat: no-repeat;
@@ -1191,7 +1191,7 @@ input.input-lg {
   cursor: pointer;
 }
 .aberto {
-  background-image: url("../img/aberto.svg");
+  background-image: url("../images/aberto.svg");
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
@@ -1207,7 +1207,7 @@ input.input-lg {
   background-color: #fff;
 }
 .fechado {
-  background-image: url("../img/fechado.svg");
+  background-image: url("../images/fechado.svg");
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -1251,7 +1251,7 @@ input.input-lg {
   position: absolute;
   bottom: -5px;
   right: -20px;
-  background-image: url("../img/check.svg");
+  background-image: url("../images/check.svg");
 }
 .envelope-wrraper .desc {
   font-size: 22px;
@@ -1490,6 +1490,18 @@ input.input-lg {
 .rodape-pesquisa {
   padding-top: 30px;
 }
+.pesquisas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.slider {
+  padding: 0 20px;
+}
 @media screen and (max-width: 956px) {
   .wrraper {
     padding-top: 5px;
@@ -1726,7 +1738,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #e257a7;
   width: 140px;
   height: 140px;
-  background-image: url("../img/loros.png");
+  background-image: url("../images/loros.png");
   background-position: center 80%;
   background-repeat: no-repeat;
   margin: auto;
@@ -2347,14 +2359,22 @@ footer .logo-biz {
 footer .logo-biz img {
   margin: auto;
 }
+footer .footer {
+  height: 40px;
+}
 footer .logo-pampili {
   max-width: 10rem;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 0px;
-}
-footer .logo-pampili img {
-  margin: auto;
+  background-image: url("/images/logo.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pulsar {
   -webkit-animation: pulsar 2s infinite;
@@ -2565,12 +2585,13 @@ footer .logo-pampili img {
 }
 .bg-colecao {
   background-color: #fff;
-  margin-left: 25px;
+  margin-left: 18px;
   padding: 10px 10px;
   box-shadow: 0 0 5px #b1afaf;
 }
 .botoes-colecao {
   text-align: center;
+  padding-top: 10px;
 }
 .botoes-colecao > * {
   margin-left: 5px;
@@ -2578,25 +2599,25 @@ footer .logo-pampili img {
   border-radius: 20px;
 }
 .curti {
-  background-image: url("/img/pesquisa/colecao/curti.png");
+  background-image: url("/images/pesquisa/colecao/curti.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .amei {
-  background-image: url("/img/pesquisa/colecao/amei.png");
+  background-image: url("/images/pesquisa/colecao/amei.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .indiferente {
-  background-image: url("/img/pesquisa/colecao/indiferente.png");
+  background-image: url("/images/pesquisa/colecao/indiferente.png");
   width: 40px;
   height: 40px;
   background-position: center center;
 }
 .naoGostei {
-  background-image: url("/img/pesquisa/colecao/naoGostei.png");
+  background-image: url("/images/pesquisa/colecao/naoGostei.png");
   width: 40px;
   height: 40px;
   background-position: center center;
@@ -2630,7 +2651,7 @@ footer .logo-pampili img {
 }
 .img-certo::after {
   content: '';
-  background-image: url("/img/pesquisa/colecao/certo.png");
+  background-image: url("/images/pesquisa/colecao/certo.png");
   width: 50px;
   height: 50px;
   background-position: center center;
@@ -2653,6 +2674,22 @@ footer .logo-pampili img {
   width: 60px !important;
   height: 60px !important;
 }
+.btn-finalizar {
+  -webkit-filter: grayscale(45%);
+          filter: grayscale(45%);
+}
+.slick-prev {
+  z-index: 9;
+}
+.slick-next {
+  visibility: hidden;
+}
+.hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 @media screen and (max-width: 1330px) {
   .curti,
   .amei,
@@ -2668,8 +2705,17 @@ footer .logo-pampili img {
   .amei,
   .indiferente,
   .naoGostei {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  .titulo-colecao {
+    line-height: 45px;
+  }
+  .pesquisa-total {
+    margin-top: 20px;
+  }
+  .rodape-pesquisa {
+    padding-top: 0;
   }
 }
 @supports (-ms-ime-align: auto) {
@@ -2712,6 +2758,187 @@ footer .logo-pampili img {
   font-size: 14px;
   text-align: center;
   float: right;
+}
+body.tweenie h1,
+body.tweenie h2,
+body.tweenie h3,
+body.tweenie h4,
+body.tweenie h5,
+body.tweenie h6 {
+  color: #000;
+}
+body.tweenie .linha-rosa {
+  border-bottom: 2px solid #eccaca;
+}
+body.tweenie .btn-pampili {
+  border-bottom: 3px solid #eccaca;
+  background: #eccaca;
+  background: linear-gradient(to right, #eccaca 0%, #a4d4d6 100%);
+  color: #000;
+}
+body.tweenie footer {
+  background: #eccaca;
+  background: linear-gradient(to right, #eccaca 0%, #a4d4d6 100%);
+}
+body.tweenie footer .logo-pampili {
+  max-width: 10rem;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-image: url("/images/pesquisa/tween-branco.svg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-presente-escolha {
+  position: relative;
+  background-color: #e8e8e8;
+  transition: 0.5s;
+  border: 1px solid #d3d3d3;
+}
+.btn-presente-escolha .inputCheck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btn-presente-escolha:focus {
+  background-color: #e8e8e8;
+}
+.btn-presente-escolha img {
+  max-height: 200px;
+  margin: auto;
+}
+.btn-presente-escolha.ativo {
+  background-color: #fff;
+  border: 2px solid #ec529c;
+  box-shadow: 5px 2px 10px rgba(31,18,18,0.51), 0 0 20px #e257a6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 3;
+}
+.btn-presente-escolha.ativo img {
+  background: #fff;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.componente-pesquisa {
+  margin-top: 30px;
+}
+.sub-pergunta,
+.pergunta-vida,
+.resposta-potencia {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.hidden {
+  display: none !important;
+}
+.displayFlex7pesquisa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.displayFlex7pesquisa > * {
+  background-color: #afadad;
+  transition: 1s;
+  border: 2px solid #fff;
+  text-align: center;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 8px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #a9a9a9;
+}
+.displayFlex7pesquisa > * p {
+  margin: 0;
+  padding: 0;
+}
+.displayFlex7pesquisa > div.ativo {
+  border-bottom: 0;
+  background-color: #e257a7;
+  border: 2px solid #fff;
+}
+.pd {
+  padding: 40px 40px 10px 40px;
+}
+.pontos {
+  position: fixed;
+  background-color: #b00069;
+  bottom: 0;
+  left: 20px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.pontos p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.pontos p span {
+  font-size: 20px;
+}
+.valorInputColuna,
+.valorInput {
+  width: 35px;
+  height: 35px;
+  background-color: #a9a9a9;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 5px;
+  margin: 0 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #a9a9a9;
+  float: left;
+  transition: 1s;
+}
+.valorInputColuna.ativo,
+.valorInput.ativo {
+  background-color: #f00;
+}
+.valorInputColuna span,
+.valorInput span {
+  font-size: 18px;
+}
+.valorInputColuna.block,
+.valorInput.block {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.numero {
+  margin-right: 25px;
+}
+@media screen and (max-width: 999px) {
+  .numero {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+.hidden {
+  display: none !important;
 }
 .seta-meteriais {
   max-width: 15px;

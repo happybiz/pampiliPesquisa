@@ -1,0 +1,24 @@
+extends ./_layouts/pesquisa.pug
+
+block content
+    article.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
+        // sair
+        //.logout
+            img(src="images/sair.svg", alt="Log Out")
+
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="images/rosa-pampili.svg", alt="Pampili")
+        .envelope-wrraper
+                .pesquisas.pd-80-top
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/notaColecao.html"') Coleção
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/fip.html"') fip
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/presente.html"') Presente
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/reconhecimento2.html"') Reconhecimento
+                    button.btn.btn-lg.btn-pampili.btn-finalizar.center-block(onclick='location.href="/pesquisa.html"') Mkt
+
+        canvas#canvas
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/heartGame.js")

@@ -1,0 +1,35 @@
+extends ./_layouts/pesquisa.pug
+
+block content
+    article.col-md-offset-1.col-md-10.col-lg-offset-2.col-lg-8
+        .pampili-logo
+            a(href="/")
+                img.img-responsive(src="/images/rosa-pampili.svg", alt="Pampili")
+        .container
+            .row
+                .col-sm-12.componente-pesquisa.pd-20-bottom.printPage
+                    .row.well.no-bottom.participante
+                        h3#titulo Resultado
+                        h6 Fulano de Tal
+                        .academia-canvas
+                            .row
+                                .col-sm-12.text-center
+                                    canvas#canvas2(style="max-width:100%")
+                    
+                        
+
+
+
+
+                .col-sm-12.text-center.pd-40-bottom
+                    button#gerarPdf.btn.btn-default Gerar PDF
+
+        img(src="images/pesquisa/roda.svg", alt="", class="hidden", id="roda")
+        img(src="images/pesquisa/rosalina.svg", alt="", class="hidden", id="rosalina")
+        img(src="images/pesquisa/eixo.svg", alt="", class="hidden", id="eixo")
+        img(src="images/pesquisa/logo.svg", alt="", class="hidden", id="logo")
+        img(src="images/pesquisa/sombra.svg", alt="", class="hidden", id="sombra")
+
+block append scriptsJS 
+    script(src="js/app.js")
+    script(src="js/resultado-roda.js")

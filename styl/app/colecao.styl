@@ -13,37 +13,38 @@
 
 .bg-colecao
     background-color: #ffffff
-    margin-left: 25px
+    margin-left: 18px
     padding: 10px 10px
     box-shadow: 0 0 5px #b1afaf
 
 .botoes-colecao
     text-align: center
+    padding-top: 10px;
     & > *
         margin-left: 5px
         background-color: transparent
         border-radius: 20px
 
 .curti
-    background-image: url('/img/pesquisa/colecao/curti.png')
+    background-image: url('/images/pesquisa/colecao/curti.png')
     width: 40px
     height 40px
     background-position: center center
 
 .amei
-    background-image: url('/img/pesquisa/colecao/amei.png')
+    background-image: url('/images/pesquisa/colecao/amei.png')
     width: 40px
     height 40px
     background-position: center center
 
 .indiferente
-    background-image: url('/img/pesquisa/colecao/indiferente.png')
+    background-image: url('/images/pesquisa/colecao/indiferente.png')
     width: 40px
     height 40px
     background-position: center center
 
 .naoGostei
-    background-image: url('/img/pesquisa/colecao/naoGostei.png')
+    background-image: url('/images/pesquisa/colecao/naoGostei.png')
     width: 40px
     height 40px
     background-position: center center
@@ -74,7 +75,7 @@
     position relative
     &::after
         content: ''
-        background-image: url('/img/pesquisa/colecao/certo.png');
+        background-image: url('/images/pesquisa/colecao/certo.png');
         width: 50px
         height 50px
         background-position: center center
@@ -95,6 +96,21 @@
     width: 60px !important
     height: 60px !important
 
+.btn-finalizar
+    filter: grayscale(45%);
+
+.slick-prev
+    z-index 9
+
+.slick-next 
+    visibility: hidden
+
+.hr
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 0;
+    margin-bottom: 0;
+
 @media screen and (max-width: 1330px)
     .curti,
     .amei,
@@ -109,5 +125,14 @@
     .amei,
     .indiferente,
     .naoGostei
-        width: 24px
-        height 24px
+        width: 28px
+        height 28px
+    
+    .titulo-colecao
+        line-height: 45px
+    
+    .pesquisa-total
+        margin-top: 20px;
+    
+    .rodape-pesquisa
+        padding-top: 0;

@@ -1,10 +1,8 @@
 (function ($){
     var slider = $('.colecao-wrraper-flex').slick({
         centerMode: true,
-        //centerPadding: '60px',
         slidesToShow: 3,
-        prevArrow: '<img src="/img/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
-        nextArrow: '<img src="/img/pesquisa/colecao/seta-direita.png"  class="slick-next" alt="Esquerda" />',
+        prevArrow: '<img src="/images/pesquisa/colecao/seta-esquerda.png" class="slick-prev" alt="Esquerda" />',
         infinite:false,
         responsive: [
         {
@@ -28,13 +26,21 @@
         ]
     });
 
+    // Adicionar e retirar o attr dos botoes quando clica nas setas
     $('.slick-current button').attr('disabled', false);  
-    $('.slick-prev, .slick-next').on('click',function(){ 
+    $(slider).on('afterChange',function(event, slick, currentSlide){ 
+        var a = $(".slick-slide").length - 1
+        
         $('.slick-slide button').attr('disabled', true);      
         $('.slick-current button').attr('disabled', false);
+        
+        if(a >= currentSlide){
+          return
+        }
         $('.slick-current .botoes-colecao button').removeClass('btn-cinza');
     });
 
+    //Envento dos botoes: adiciona os estilos e passa para o proximo slide
     $('.botoes-colecao button').on('click', function(){
         $('.slick-current .botoes-colecao button').removeClass('borda-check');
         $('.slick-current .botoes-colecao button').addClass('btn-cinza');

@@ -2,7 +2,7 @@ var HeartsBackground = {
     heartHeight: 60,
     heartWidth: 64,
     hearts: [],
-    heartImage: '/img/heart.png',
+    heartImage: '/images/heart.png',
     maxHearts: 8,
     minScale: 0.4,
     desenhar: function() {

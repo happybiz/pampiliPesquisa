@@ -9,19 +9,19 @@
         $(elemento).css('background-color', cor);
         switch(parseInt(valor)){
             case 1 || 2:
-                $(img).attr('src', 'img/indicadores/1.png');
+                $(img).attr('src', 'images/indicadores/1.png');
                 break;
             case 3 || 4:
-                $(img).attr('src', 'img/indicadores/2.png');
+                $(img).attr('src', 'images/indicadores/2.png');
                 break;
             case 5 || 6:
-                $(img).attr('src', 'img/indicadores/3.png')
+                $(img).attr('src', 'images/indicadores/3.png')
                 break;
             case 7 || 8:
-                $(img).attr('src', 'img/indicadores/4.png');
+                $(img).attr('src', 'images/indicadores/4.png');
                 break;
             case 9 || 10:
-                $(img).attr('src', 'img/indicadores/5.png');
+                $(img).attr('src', 'images/indicadores/5.png');
                 break;
         }
 		// caso elemento maior que zero a cor a baixo sera adicionadO 
