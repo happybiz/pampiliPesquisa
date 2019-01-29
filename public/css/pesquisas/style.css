@@ -2624,6 +2624,7 @@ footer .logo-pampili {
 .botoes-colecao button {
   position: relative;
   cursor: pointer;
+  border: none;
 }
 .botoes-colecao button .input-colecao {
   position: absolute;
@@ -2688,20 +2689,20 @@ footer .logo-pampili {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1330px) {
-  .curti,
-  .amei,
-  .indiferente,
-  .naoGostei {
+  .curti img,
+  .amei img,
+  .indiferente img,
+  .naoGostei img {
     width: 30px;
     height: 30px;
     background-size: cover;
   }
 }
 @media screen and (max-width: 773px) {
-  .curti,
-  .amei,
-  .indiferente,
-  .naoGostei {
+  .curti img,
+  .amei img,
+  .indiferente img,
+  .naoGostei img {
     width: 28px;
     height: 28px;
   }
