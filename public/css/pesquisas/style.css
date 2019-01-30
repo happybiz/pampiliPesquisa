@@ -2597,6 +2597,13 @@ footer .logo-pampili {
 .botoes-colecao {
   text-align: center;
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .botoes-colecao > * {
   background-color: transparent;
@@ -2625,6 +2632,7 @@ footer .logo-pampili {
   position: relative;
   cursor: pointer;
   border: none;
+  padding: 5px;
 }
 .botoes-colecao button .input-colecao {
   position: absolute;
